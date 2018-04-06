@@ -1,4 +1,8 @@
-function btnLoginLogout(){
+
+
+
+
+var  btnLoginLogout  = function(){
 
 	var btn = document.getElementById('crt-login');
 
@@ -13,7 +17,7 @@ function btnLoginLogout(){
 }
 
 
-function validateLogin(){
+var validateLogin = function (){
 	
 		var email = document.getElementById("email_login").value; 
 		var pass = document.getElementById("pass_login").value; 
@@ -34,7 +38,7 @@ function validateLogin(){
 	
 }
 
-function onLoadLoginPage(){
+var onLoadLoginPage = function (){
 	$("#pass_login").keyup(function(event) {
 	    if (event.keyCode === 13) {
 	        validateLogin();
@@ -42,7 +46,7 @@ function onLoadLoginPage(){
 	});
 }
 
-function loadPageIndex(){
+var loadPageIndex = function (){
 
 	var queryString = window.location.search.substring(1);
     var varArray = queryString.split("="); //eg. index.html?msg=1
@@ -50,21 +54,33 @@ function loadPageIndex(){
 
     document.getElementById("userNameSession").innerText  = token;
     document.getElementById("crt-login").innerText = "Logout";
+    setNewPage('page/asset.html');
 
     if(token == null){
+    	document.getElementById("hist").children[0].style.display = "none";
+    	document.getElementById("news").children[0].style.display = "none";
+    	document.getElementById("port").children[0].style.display = "none";
     	document.getElementById("userFromProfile").children[0].style.display = "none";
-    	document.getElementById("adminAcess").children[0].style.display = "none"
-
     	document.getElementById("crt-login").innerText = "Login";
-
-
-    	loadObjectToDiv("../page/home.html");
     	
+        	
     }
     
 
 
 }
+
+// esta funcao altera o contiudo do elemento com id pages
+var setNewPage = function(url){
+	document.getElementById("pages").setAttribute('data', url);
+}
+
+
+
+
+
+
+
 
 
 

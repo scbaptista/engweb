@@ -48,13 +48,10 @@
               <div class="menu_section">
                 <h3>Menu</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span ></span></a></li>
-                  <li id="adminAcess"><a><i class="fa fa-edit"></i> Contratos <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="form.html">Ver Contratos</a></li>
-                    </ul>
-                  </li>
-                 
+                  <li id="asset"><a href="javascript:setNewPage('page/asset.html');"><i class="fa fa-line-chart"></i> Assets <span ></span></a></li>
+                  <li id="news"><a href="javascript:setNewPage('page/news.html');"><i class="fa fa-newspaper-o"></i> News <span ></span></a></li>
+                  <li id="port"><a href="javascript:setNewPage('page/portfolio.html');"><i class="fa fa-book"></i> Portfolio <span></span></a></li>
+                  <li id="hist"><a href="javascript:setNewPage('page/historical.html');"><i class="fa fa-history"></i> Historical <span></span></a></li>
                 </ul>
               </div>
 
@@ -77,19 +74,13 @@
                 <li><a href="javascript:btnLoginLogout();"><i class="fa fa-sign-in pull-right"></i><span id="crt-login"></span></a></li>
 
                 <li id="userFromProfile">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img src="" alt=""> <!--images/img.jpg-->
                     <span id="userNameSession"></span>
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a class="fa fa-user" href="javascript:;"><span>&nbsp;&nbsp;Perfil</span></a></li>
-                    <li>
-                      <a class="fa fa-cog" href="javascript:;"><span>&nbsp;&nbsp;Gestão</span>
-                      </a>
-                    </li>
-                    <li><a  class="fa fa-question-circle" href="javascript:;"><span>&nbsp;&nbsp;Help</span></a></li>
-                    
+                    <li><a  class="fa fa-question-circle" href="javascript:setNewPage('page/help.html');"><span>&nbsp;&nbsp;Help</span></a></li>
                   </ul>
                 </li>
 
@@ -101,14 +92,14 @@
 
         <!-- page content -->
         <div class="right_col" role="main" id="right_col" >
-         
+           <object width="100%"  class="pages" id="pages" data=""></object>
         </div>
         <!-- /page content -->
 
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Desenvolvido por <a href="https://colorlib.com"> rita, sandra, pedro</a>
+            Desenvolvido por <a href="#"> rita, sandra, pedro</a>
           </div>
           <div class="clearfix"></div>
         </footer>

@@ -49,15 +49,20 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $NAV_MENU = $('.nav_menu'),
     $FOOTER = $('footer'),
     $LOGIN = $('.login_form');
+    $PAGES = $('.pages');
 
 	
 	
 // Sidebar
 function init_sidebar() {
 // TODO: This is some kind of easy fix, maybe we can improve this
+
+
+
 var setContentHeight = function () {
-	// reset height
+	// reset height - foi adicionado 
 	$RIGHT_COL.css('min-height', $(window).height());
+	$PAGES.css('min-height', $(window).height());
 
 	var bodyHeight = $BODY.outerHeight(),
 		footerHeight = $BODY.hasClass('footer_fixed') ? -10 : $FOOTER.height(),
@@ -68,6 +73,9 @@ var setContentHeight = function () {
 	contentHeight -= $NAV_MENU.height() + footerHeight;
 
 	$RIGHT_COL.css('min-height', contentHeight + 23);
+
+	//menu config the height
+	$PAGES.css('min-height', contentHeight - 50);
 
 	$LOGIN.css('min-height' , contentHeight + 23);
 };
