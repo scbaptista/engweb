@@ -34,26 +34,26 @@
                 </div>
             </div>
 
-             <div class="col-md-3">
+            <div class="col-md-3">
                 <div class="item">
                     <h3><span class="title">Change (1D, 4h, 1h)</span></h3>
                     <div id="change"></div>
-                  </div>
-              </div>
-
-               <div class="col-md-3">
-                  <div class="item">
-                      <h3><span class="title">Sell</span></h3>
-                      <div id="sell"></div>
-                    </div>
                 </div>
+            </div>
 
-                <div class="col-md-3">
-                  <div class="item">
-                      <h3><span class="title">Buy</span></h3>
-                      <div id="buy"></div>
-                    </div>
+            <div class="col-md-3">
+                <div class="item">
+                    <h3><span class="title">Sell</span></h3>
+                    <div id="sell"></div>
                 </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="item">
+                    <h3><span class="title">Buy</span></h3>
+                    <div id="buy"></div>
+                </div>
+            </div>
                 
                
           </div><!-- /row -->
@@ -63,27 +63,35 @@
 
 
   <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="sell-buy" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-      <ul class="nav nav-tabs">
-         <li class="active"><a data-toggle="tab" href="#sa">Sell</a></li>
-          <li><a data-toggle="tab" href="#saaa">Buy</a></li>
-      </ul>
+	<div class="modal-content">
+    	<span class="close">&times;</span>
+      	<ul class="nav nav-tabs">
+        	<li class="active"><a data-toggle="tab" href="#sell-tab">Sell</a></li>
+          	<li><a data-toggle="tab" href="#buy-tab">Buy</a></li>
+      	</ul>
 
-     <div class="tab-content">
-      <div id="sa" class="tab-pane fade in active">
-        <h3>HOME</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div id="saaa" class="tab-pane fade">
-        <h3>Menu 1</h3>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-  </div>
+     	<div class="tab-content">
+      		<div id="sell-tab" class="tab-pane fade in active"></div>
+      		<div id="buy-tab" class="tab-pane fade"></div>
+		</div>
+  	</div>
+
+  	<div id='stop-loss' class='modal-small'>
+        <div class='modal-content'>
+			<ul class='nav nav-tabs'>
+				<li class='active'><a data-toggle='tab' href='#sell-tab'>Sell</a></li>
+				<li><a data-toggle='tab' href='#buy-tab'>Buy</a></li>
+			</ul>
+
+			<div class='tab-content'>
+				<div id='sell-tab' class='tab-pane fade in active'> </div>
+				<div id='buy-tab' class='tab-pane fade'></div>
+			</div>
+		</div>
+	</div>
 
 </div>
 
@@ -114,16 +122,16 @@
           <div class="clearfix"></div>
         </footer>
 
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
- <script type="text/javascript" src="../js/markitondemand.js"></script>
-  <script type="text/javascript">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/markitondemand.js"></script>
+    <script type="text/javascript">
     $(document).ready(function () {
 
-        var list = ['AAPL', 'MSFT', 'JNJ', 'GOOG'];
+    var list = ['AAPL', 'MSFT', 'JNJ', 'GOOG'];
         list.forEach(function(element) {
-          getAsset(element);
+        getAsset(element);
 
-        });
+    });
 
     });
   </script>

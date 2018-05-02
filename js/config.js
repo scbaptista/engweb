@@ -32,10 +32,7 @@ var validateLogin = function (){
 			}else{
 				document.getElementById("erroDivLogin").innerText  = "Sua password ou email estão errados";
 			}
-		}
-
-	
-	
+		}	
 }
 
 var onLoadLoginPage = function (){
@@ -65,9 +62,6 @@ var loadPageIndex = function (){
     	
         	
     }
-    
-
-
 }
 
 // esta funcao altera o contiudo do elemento com id pages
