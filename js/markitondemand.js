@@ -59,11 +59,11 @@ var getAsset = function(asset){
     document.getElementById("symbol").innerHTML += "<p>"+jsonResult.Name+"</p>";
     document.getElementById("change").innerHTML += "<p>"+jsonResult.Change+"</p>";
     document.getElementById("sell").innerHTML += "<table><tr><td><button class='fa fa-scribd' id=\"myBtn\"></button></td><td><p style='margin-left: 8px;'>"+ jsonResult.Low+"</p></td></tr></table>";
-    document.getElementById("buy").innerHTML += "<table><tr><td><p class='fa fa-bold'></p></td><td><p style='margin-left: 8px;'>"+ jsonResult.Low+"</p></td></tr></table>";
+    document.getElementById("buy").innerHTML += "<table><tr><td><p class='fa fa-bold'></p></td><td><p style='margin-left: 8px;'>"+ jsonResult.High+"</p></td></tr></table>";
 
 
     // Get the modal
-    var modal = document.getElementById('myModal');
+    var modal = document.getElementById('sell-buy');
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
@@ -74,6 +74,16 @@ var getAsset = function(asset){
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
+        //document.getElementById("stop-loss").style.display = "block";
+
+
+        document.getElementById("sell-tab").innerHTML = "<br><h4>SELL "+jsonResult.Name+"</h4>";
+        document.getElementById("sell-tab").innerHTML +="<h4>   "+jsonResult.Low+"$</h4><br>";
+        document.getElementById("sell-tab").innerHTML +="<b>AMOUNT</b> <input id='amount' type='number' name='number' value='1000' min='100' max='10000' step='100'/> \ <button id='to-units'>UNITS</button>";
+        document.getElementById("sell-tab").innerHTML +="<p>UNITS: 20000 </p>";
+        document.getElementById("buy-tab").innerHTML = "<h4>BUY "+jsonResult.Name+"</h4>";
+        document.getElementById("buy-tab").innerHTML += "<h4>   "+jsonResult.High+"</h4><br><br>";
+
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -86,6 +96,10 @@ var getAsset = function(asset){
         if (event.target == modal) {
             modal.style.display = "none";
         }
+    }
+
+    amount.onchange = function(){
+        //alterar o nº de unidades (acho que terá de ser quando tivermos backend)
     }
     /**
     * Need help? Visit the API documentation at:

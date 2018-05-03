@@ -50,6 +50,7 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $FOOTER = $('footer'),
     $LOGIN = $('.login_form');
     $PAGES = $('.pages');
+    $ASSET = $('.assetPage');
 
 	
 	
@@ -63,6 +64,8 @@ var setContentHeight = function () {
 	// reset height - foi adicionado 
 	$RIGHT_COL.css('min-height', $(window).height());
 	$PAGES.css('min-height', $(window).height());
+	$ASSET.css('min-height', $(window).height());
+
 
 	var bodyHeight = $BODY.outerHeight(),
 		footerHeight = $BODY.hasClass('footer_fixed') ? -10 : $FOOTER.height(),
@@ -73,6 +76,8 @@ var setContentHeight = function () {
 	contentHeight -= $NAV_MENU.height() + footerHeight;
 
 	$RIGHT_COL.css('min-height', contentHeight + 23);
+
+	$ASSET.css('min-height', contentHeight - 40);
 
 	//menu config the height
 	$PAGES.css('min-height', contentHeight - 50);
