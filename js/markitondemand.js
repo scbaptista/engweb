@@ -74,6 +74,7 @@ var getAsset = function(asset){
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
+<<<<<<< HEAD
         document.getElementById("modal-options").style.display = "block";
 
         document.getElementById("sell-tab").innerHTML = "<br><h4>SELL "+jsonResult.Name+"</h4>";
@@ -82,6 +83,17 @@ var getAsset = function(asset){
         document.getElementById("sell-tab").innerHTML +="<p>UNITS: 20000 </p>";
         document.getElementById("buy-tab").innerHTML = "<h4>BUY "+jsonResult.Name+"</h4>";
         document.getElementById("buy-tab").innerHTML += "<h4>	"+jsonResult.High+"</h4><br><br>";
+=======
+        //document.getElementById("stop-loss").style.display = "block";
+
+
+        document.getElementById("sell-tab").innerHTML = "<br><h4>SELL "+jsonResult.Name+"</h4>";
+        document.getElementById("sell-tab").innerHTML +="<h4>   "+jsonResult.Low+"$</h4><br>";
+        document.getElementById("sell-tab").innerHTML +="<b>AMOUNT</b> <input id='amount' type='number' name='number' value='1000' min='100' max='10000' step='100'/> \ <button id='to-units'>UNITS</button>";
+        document.getElementById("sell-tab").innerHTML +="<p>UNITS: 20000 </p>";
+        document.getElementById("buy-tab").innerHTML = "<h4>BUY "+jsonResult.Name+"</h4>";
+        document.getElementById("buy-tab").innerHTML += "<h4>   "+jsonResult.High+"</h4><br><br>";
+>>>>>>> refs/remotes/origin/dev_sandra
 
     }
 

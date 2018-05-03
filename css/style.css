@@ -1,12 +1,12 @@
 
 html , body{
-	
+    
  height:100%;
  
 }
  
 .full-width {
-	
+    
  width:100%;
  
  }
@@ -1672,7 +1672,7 @@ span.right {
     position: fixed;
     width: 230px;
     background: #2A3F54;
-	z-index:999;
+    z-index:999;
 }
 .sidebar-footer a {
     padding: 7px 0 3px;
@@ -4216,22 +4216,22 @@ ul.notifications {
 /*
 
 /*
-.checkbox 																										{ display: block;position:relative;cursor:pointer; }
-.checkbox input 																								{ position:absolute;z-index:-1;opacity:0;left:0;top:0; }
-.checkbox div 																									{ position:absolute;top:2px;left:0;height:20px;width:20px;background:#e6e6e6;border-radius:3px; }
-.checkbox input:checked ~ div 																			{ background: #1ABC9C; }
+.checkbox                                                                                                       { display: block;position:relative;cursor:pointer; }
+.checkbox input                                                                                                 { position:absolute;z-index:-1;opacity:0;left:0;top:0; }
+.checkbox div                                                                                                   { position:absolute;top:2px;left:0;height:20px;width:20px;background:#e6e6e6;border-radius:3px; }
+.checkbox input:checked ~ div                                                                           { background: #1ABC9C; }
 .checkbox:hover input:not([disabled]):checked ~ div,
-.checkbox input:checked:focus ~ div 																	{ background: #1ABC9C; }
-.checkbox input:disabled ~ div 																			{ background: #1ABC9C;opacity: 0.6;pointer-events: none; }
-.checkbox div:after 																							{ content: '';position: absolute;display: none; }
-.checkbox input:checked ~ div:after 																	{ display: block; }
-.checkbox-wp div:after 																					{ left: 7px;top: 3px;width: 7px;height: 11px;border: solid #fff;border-width: 0 2px 2px 0;transform: rotate(40deg); }
-.checkbox-wp input:disabled ~ div:after 																{ border-color: #F2F2F2; }
+.checkbox input:checked:focus ~ div                                                                     { background: #1ABC9C; }
+.checkbox input:disabled ~ div                                                                          { background: #1ABC9C;opacity: 0.6;pointer-events: none; }
+.checkbox div:after                                                                                             { content: '';position: absolute;display: none; }
+.checkbox input:checked ~ div:after                                                                     { display: block; }
+.checkbox-wp div:after                                                                                  { left: 7px;top: 3px;width: 7px;height: 11px;border: solid #fff;border-width: 0 2px 2px 0;transform: rotate(40deg); }
+.checkbox-wp input:disabled ~ div:after                                                                 { border-color: #F2F2F2; }
 
 
-.checkbox-radio div 																							{ border-radius: 50%; }
-.checkbox-radio div:after 																					{ left: 7px;top: 7px;height: 6px;width: 6px;border-radius: 50%;background: #fff; }
-.checkbox-radio input:disabled ~ div:after 															{ background: #F2F2F2; }
+.checkbox-radio div                                                                                             { border-radius: 50%; }
+.checkbox-radio div:after                                                                                   { left: 7px;top: 7px;height: 6px;width: 6px;border-radius: 50%;background: #fff; }
+.checkbox-radio input:disabled ~ div:after                                                          { background: #F2F2F2; }
 
 
 .checkbox, .radio { margin-top:-3px; }
@@ -4239,7 +4239,7 @@ ul.notifications {
 table thead .checkbox { margin-top:-7px;margin-top:-21px; }
 table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 */
-			
+            
 .daterangepicker.xdisplay { width:228px; }
 
 .dataTables_wrapper > .row{
@@ -4266,6 +4266,7 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
     padding-left: 0%;
     left: 0;
     top: 0;
+<<<<<<< HEAD
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     -webkit-overflow-scrolling: touch;
@@ -4281,6 +4282,13 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
         width:100%;
         height:100%;
     }
+=======
+    width: 80%; /* Full width */
+    height: 500px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+>>>>>>> refs/remotes/origin/dev_sandra
 }
 
 /* Modal Content */
@@ -4311,6 +4319,7 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
+<<<<<<< HEAD
     padding-top: 350px; /* Location of the box */
     padding-left: 10%;
     left: 0;
@@ -4333,3 +4342,18 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
         height:100%;
     }
 }
+=======
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 70%; /* Full width */
+    height: 500px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.pages ,.assetPage{
+    background-color: #F7F7F7;
+}
+>>>>>>> refs/remotes/origin/dev_sandra
