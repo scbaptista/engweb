@@ -74,27 +74,36 @@ var getAsset = function(asset){
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
         modal.style.display = "block";
-<<<<<<< HEAD
         document.getElementById("modal-options").style.display = "block";
 
         document.getElementById("sell-tab").innerHTML = "<br><h4>SELL "+jsonResult.Name+"</h4>";
         document.getElementById("sell-tab").innerHTML +="<h4>	"+jsonResult.Low+"$</h4><br>";
         document.getElementById("sell-tab").innerHTML +="<b>AMOUNT</b> <input id='amount' type='number' name='number' value='1000' min='100' max='10000' step='100'/> \ <button id='to-units'>UNITS</button>";
         document.getElementById("sell-tab").innerHTML +="<p>UNITS: 20000 </p>";
+       /* document.getElementById("sell-tab").innerHTML += "<div class='modal-options'> <!-- mudar o nome -->"
+  															+"<a href='javascript:addPage('stoploss', 'leverage', 'takeprofit');'>STOP LOSS</a>"
+													  		+"<a href='javascript:addPage('leverage','stoploss', 'takeprofit');'>LEVERAGE</a>"
+													  		+"<a href='javascript:addPage('takeprofit', 'leverage','stoploss');'>TAKE PROFIT</a>"	
+														+"</div>"
+
+														+"<div id='stoploss'>"
+														  +"<h2>Stop loss</h2>"
+														  +"<p>stop loss</p>"
+														+"</div>"
+
+														+"<div id='leverage' style='display: none;'>"
+														  +"<h2>leverage</h2>"
+														  +"<p>leverage</p>"
+														+"</div>"
+
+														+"<div id='takeprofit' style='display: none;'>"
+														  +"<h2>Take profit</h2>"
+														  +"<p>take profit</p>"
+														+"</div>"*/
+
+
         document.getElementById("buy-tab").innerHTML = "<h4>BUY "+jsonResult.Name+"</h4>";
         document.getElementById("buy-tab").innerHTML += "<h4>	"+jsonResult.High+"</h4><br><br>";
-=======
-        //document.getElementById("stop-loss").style.display = "block";
-
-
-        document.getElementById("sell-tab").innerHTML = "<br><h4>SELL "+jsonResult.Name+"</h4>";
-        document.getElementById("sell-tab").innerHTML +="<h4>   "+jsonResult.Low+"$</h4><br>";
-        document.getElementById("sell-tab").innerHTML +="<b>AMOUNT</b> <input id='amount' type='number' name='number' value='1000' min='100' max='10000' step='100'/> \ <button id='to-units'>UNITS</button>";
-        document.getElementById("sell-tab").innerHTML +="<p>UNITS: 20000 </p>";
-        document.getElementById("buy-tab").innerHTML = "<h4>BUY "+jsonResult.Name+"</h4>";
-        document.getElementById("buy-tab").innerHTML += "<h4>   "+jsonResult.High+"</h4><br><br>";
->>>>>>> refs/remotes/origin/dev_sandra
-
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -118,3 +127,30 @@ var getAsset = function(asset){
     */
 });
 }
+
+<script>
+function addPage(div1, div2, div3){
+	document.getElementById(div1).style.display = "inline";
+	if(div2!=null){
+    	if(document.getElementById(div2).style.display != 'none'){
+      		alert('parvo');
+   		}
+    	var value =  document.getElementById(div2).children.length;
+    	var i;
+    	for (i=1;i<=value;i++){
+      		document.getElementById(div2).children[i].style.display = "none";
+    	}
+    	alert('teste');
+ 	}
+	alert('estupido');
+	  	if(div3!=null){
+	        alert('ola');
+			var value2 =  document.getElementById(div3).children.length;
+		    var i2;
+	    	for (i2=1;i2<=value2;i2++){
+	     		document.getElementById(div3).children[i2].style.display = "none";
+	    	}
+	  
+	  	}  
+}
+</script>
