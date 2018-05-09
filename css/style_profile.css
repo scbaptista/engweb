@@ -153,7 +153,13 @@ h1 {
 }
 .submitAddWith{
   margin-top: 5%;
+  width: 100%;
 }
+.submitAddWith a{
+  float: center;
+  width: 52%;
+}
+
 .submitAddWith a:hover{
   color: #7e7e7e;
   background: #002242;
@@ -505,6 +511,29 @@ h1 {
     -ms-transition: .5s all;
 }
 
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    color: black;
+    padding: 13px 15px 12px
+}
+.navbar-nav>li>a {
+    font-weight: 500;
+    color: #ECF0F1 !important;
+    margin: 5px 0px !important;
+    line-height: 32px
+}
+.nav.navbar-nav>li>a {
+    color: #515356 !important
+}
 
 .modal-content h2{
   font-size: 2em;
@@ -512,6 +541,7 @@ h1 {
   font-weight: 700;
   margin-bottom: 5px;
 }
+
 .modal-content #exitModal{
   cursor:pointer;
   float:right
