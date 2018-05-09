@@ -102,11 +102,24 @@ h1 {
 	letter-spacing: 1px;
 	text-align:center;
 }
+.tab-content input[type="number"], .tab-content input[type="password"] {
+  width: 52%;
+  padding: 1em 1em 1em 1em;
+  font-size: 0.8em;
+  margin: 1em 0;
+  outline: none;
+  color: #7e7e7e;
+  border: none;
+  border-bottom: 2px solid ;
+  letter-spacing: 1px;
+  text-align:center;
+}
+
 .profile-form input[type="text"] {
     background: none;
     display: block;
 }
-.profile-form input[type="password"] {
+.profile-form input[type="password"] .tab-content input[type="password"]  {
      background: none;
     display: block;
 }
@@ -114,7 +127,7 @@ h1 {
      background: none;
     display: block;
 }
-.profile-form input[type="number"] {
+.profile-form input[type="number"] .tab-content input[type="number"] {
      background: none;
     display: block;
 }
@@ -138,6 +151,19 @@ h1 {
     padding: 0.7em 0;
     font-size: 0.9em;
 }
+.submitAddWith{
+  margin-top: 5%;
+}
+.submitAddWith a:hover{
+  color: #7e7e7e;
+  background: #002242;
+  transition: .5s all;
+-webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -o-transition: .5s all;
+  -ms-transition: .5s all;
+}
+
 .submit a:hover {
     color: #7e7e7e;
     background: #002242;
@@ -480,14 +506,29 @@ h1 {
 }
 
 
-#id01 h2{
-    font-size: 1.3em;
-    color: black;
-    font-weight: 700;
-    margin: 0.25em auto;
+.modal-content h2{
+  font-size: 2em;
+  color: #7e7e7e;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.modal-content #exitModal{
+  cursor:pointer;
+  float:right
 }
 
-#id01 .submit{
-    margin: 1% auto;
-    width: 75%;
+.modal-content #exitModal:hover{
+      magin:10px;
+      background: #002242;
+}
+
+.tab-content{
+  text-align: center;
+}
+
+.tab-content h3{
+  font-size: 1.7em;
+  color: #7e7e7e;
+  font-weight: 700;
+  margin: 5px;
 }
