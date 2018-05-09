@@ -119,7 +119,7 @@ h1 {
     background: none;
     display: block;
 }
-.profile-form input[type="password"] .tab-content input[type="password"]  {
+.profile-form input[type="password"], .tab-content input[type="password"]  {
      background: none;
     display: block;
 }
