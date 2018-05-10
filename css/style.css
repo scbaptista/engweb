@@ -1,16 +1,16 @@
 
 html , body{
-    
+
  height:100%;
- 
+
 }
- 
+
 .full-width {
-    
+
  width:100%;
- 
+
  }
- 
+
 .full-height{
  height:100%;
  }
@@ -4239,7 +4239,7 @@ ul.notifications {
 table thead .checkbox { margin-top:-7px;margin-top:-21px; }
 table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 */
-            
+
 .daterangepicker.xdisplay { width:228px; }
 
 .dataTables_wrapper > .row{
@@ -4312,4 +4312,25 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 
 .pages ,.assetPage{
     background-color: #F7F7F7;
+}
+
+.container_body h2{
+  text-align: center;
+
+}
+.container_body h4{
+  margin-left: 15px;
+  font-weight: bold;
+}
+.container_body p{
+  margin-left: 15px;
+  margin-bottom: 2em;
+}
+
+#help_tabs{
+  width: 100%;
+  margin: 20px 10px;
+}
+
+#help_tabs_content{
 }
