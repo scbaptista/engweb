@@ -58,7 +58,6 @@ h1 {
     width: 48%;
 }
 .profile-form {
-    background: url(../images/banner1.jpg)no-repeat 0px 0px;
     background-size: cover;
     padding: 2em 2em;
 	text-align: center;
@@ -103,7 +102,7 @@ h1 {
 	text-align:center;
 }
 .tab-content input[type="number"], .tab-content input[type="password"] {
-  width: 52%;
+  width: 80%;
   padding: 1em 1em 1em 1em;
   font-size: 0.8em;
   margin: 1em 0;
@@ -112,22 +111,29 @@ h1 {
   border: none;
   border-bottom: 2px solid ;
   letter-spacing: 1px;
-  text-align:center;
+  text-align: center;
+}
+
+#modalFrame{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+
 }
 
 .profile-form input[type="text"] {
     background: none;
     display: block;
 }
-.profile-form input[type="password"], .tab-content input[type="password"]  {
+.profile-form input[type="password"]{
      background: none;
-    display: block;
+     display: block;
 }
 .profile-form input[type="email"] {
      background: none;
-    display: block;
+     display: block;
 }
-.profile-form input[type="number"] .tab-content input[type="number"] {
+.profile-form input[type="number"] {
      background: none;
     display: block;
 }
@@ -143,16 +149,29 @@ h1 {
     border: none;
     color: #7e7e7e;
     cursor: pointer;
-	border-radius: 22px;
+	  border-radius: 22px;
     background: none;
     margin-top: -3em;
 }
 .Submit a {
+    width:50%;
     padding: 0.7em 0;
     font-size: 0.9em;
 }
+
+.submit a:hover {
+    width: 50%;
+    color: #7e7e7e;
+    background: #002242;
+    transition: .5s all;
+	-webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
 .submitAddWith{
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
 }
 .submitAddWith a{
@@ -170,15 +189,7 @@ h1 {
   -ms-transition: .5s all;
 }
 
-.submit a:hover {
-    color: #7e7e7e;
-    background: #002242;
-    transition: .5s all;
-	-webkit-transition: .5s all;
-    -moz-transition: .5s all;
-    -o-transition: .5s all;
-    -ms-transition: .5s all;
-}
+
 .profile-form p a {
     font-size: 0.875em;
     color: #7e7e7e;
@@ -493,7 +504,7 @@ h1 {
 
 .addWithdraw{
     float: left;
-    width: 25% ;
+    width: 30% ;
 }
 
 .addWithdraw a {
@@ -533,6 +544,19 @@ h1 {
 }
 .nav.navbar-nav>li>a {
     color: #515356 !important
+}
+
+.modal-content{
+  float: center;
+
+}
+
+.modal-content{
+  background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
 }
 
 .modal-content h2{
